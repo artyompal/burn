@@ -228,10 +228,11 @@ burn-wgpu = { path = "crates/burn-wgpu", version = "0.21.0", default-features = 
 # cubecl-common = { path = "../cubecl/crates/cubecl-common", default-features = false }
 # cubecl-zspace = { path = "../cubecl/crates/cubecl-zspace", default-features = false }
 # cubek = { path = "../cubek/crates/cubek", default-features = false }
+### Patched to use forked CubeCL. ###
+cubecl = { git = "https://github.com/artyompal/cubecl.git", branch = "master", default-features = false }
+cubecl-common = { git = "https://github.com/artyompal/cubecl.git", branch = "master", default-features = false }
+cubecl-zspace = { git = "https://github.com/artyompal/cubecl.git", branch = "master", default-features = false }
 ### For the release. ###
-cubecl = { version = "0.10.0", default-features = false }
-cubecl-common = { version = "0.10.0", default-features = false }
-cubecl-zspace = { version = "0.10.0", default-features = false }
 cubek = { version = "0.2.0", default-features = false }
 
 [profile.dev]
